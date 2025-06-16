@@ -20,5 +20,3 @@ A basic supervised learning project using the famous Iris dataset to classify fl
 - 🖼️ Computer Vision (CV) Projects
 - 🧠 Neural Networks from scratch and using frameworks like TensorFlow or PyTorch
 
-## 📂 Structure
-
