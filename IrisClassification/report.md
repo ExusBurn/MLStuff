@@ -13,24 +13,38 @@ The Iris dataset consists of 100 rows with 4 features:
 Each row is labeled with one of three flower species.
 
 ## 3. Theory
-We use Logistic Regression to perform multi-class classification. This model estimates the probability of each class using a softmax function and learns weights using gradient descent. 
+We use Logistic Regression to perform multi-class classification. This model estimates the probability of each class using a softmax function and learns weights using gradient descent.
 
-Will also try to use other methodologies(SVM, Naive Bayes) for classification in future.
+We also experimented with Gaussian Naive Bayes, which models each feature using a Gaussian distribution and uses Bayes' Theorem to calculate class probabilities.
 
 ## 4. Implementation
-- Read data using `sklearn.datasets.load_iris()`
-- Train/test split: 80/20
-- Model: Logistic Regression from `scikit-learn`
-- Evaluated accuracy on the test set
+- Read data using `pandas.read_csv()`
+- Selected 2 classes (Setosa and Versicolor) for binary classification
+- Train/test split: 80/20 using manual slicing
+- Models used:
+  - Logistic Regression from `scikit-learn`
+  - Gaussian Naive Bayes from `scikit-learn`
+- Performed Exploratory Data Analysis (EDA)
+  - Histograms
+  - Pair plots
+  - Covariance and correlation matrices
+- Evaluated model using accuracy and confusion matrix
 
-## 5. Results : (To be done)
-- Test Accuracy:
-- Plot: Sepal Length vs Sepal Width (colored by class)
+## 5. Results
+- Test Accuracy (both models): 100%
+- Confusion matrix confirmed zero misclassifications
+- EDA showed that features are linearly separable for the chosen classes
 
 ## 6. Conclusion
-This basic classification project served as a warm-up for understanding the ML workflow — loading data, training a model, evaluating accuracy, and visualizing results.
+In this project, we explored the classic Iris flower classification problem using two machine learning models:
 
-## 7. Future Work
-- Try other classifiers: KNN, SVM
-- Use confusion matrix and precision/recall
+- Logistic Regression: A linear model that successfully learned class boundaries and achieved 100% accuracy on our test set.
+- Gaussian Naive Bayes: A probabilistic classifier that assumes a normal distribution for each feature; it also achieved 100% accuracy in this case.
 
+### Key Takeaways
+
+- EDA (Exploratory Data Analysis) showed strong feature separability using:
+  - Histograms and pair plots for visual intuition.
+  - Covariance and correlation matrices to understand numerical relationships.
+- Both classes used (Iris-setosa and Iris-versicolor) were linearly separable, making the classification task easier.
+- Gaussian Naive Bayes modeled the continuous feature values using:
