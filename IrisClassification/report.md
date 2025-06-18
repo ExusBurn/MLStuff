@@ -13,7 +13,7 @@ The Iris dataset consists of 100 rows with 4 features:
 Each row is labeled with one of three flower species.
 
 ## 3. Theory
-We use Logistic Regression to perform multi-class classification. This model estimates the probability of each class using a softmax function and learns weights using gradient descent.
+We use Logistic Regression, Naive Bayes and SVM with both Linear and Gaussian Kernels to perform multi-class classification. This model estimates the probability of each class using a softmax function and learns weights using gradient descent.
 
 We also experimented with Gaussian Naive Bayes, which models each feature using a Gaussian distribution and uses Bayes' Theorem to calculate class probabilities.
 
@@ -24,6 +24,7 @@ We also experimented with Gaussian Naive Bayes, which models each feature using 
 - Models used:
   - Logistic Regression from `scikit-learn`
   - Gaussian Naive Bayes from `scikit-learn`
+  - SVM from `scikit-learn`
 - Performed Exploratory Data Analysis (EDA)
   - Histograms
   - Pair plots
@@ -31,15 +32,16 @@ We also experimented with Gaussian Naive Bayes, which models each feature using 
 - Evaluated model using accuracy and confusion matrix
 
 ## 5. Results
-- Test Accuracy (both models): 100%
+- Test Accuracy (ball models): 100%
 - Confusion matrix confirmed zero misclassifications
 - EDA showed that features are linearly separable for the chosen classes
 
 ## 6. Conclusion
-In this project, we explored the classic Iris flower classification problem using two machine learning models:
+In this project, we explored the classic Iris flower classification problem using three machine learning models:
 
 - Logistic Regression: A linear model that successfully learned class boundaries and achieved 100% accuracy on our test set.
 - Gaussian Naive Bayes: A probabilistic classifier that assumes a normal distribution for each feature; it also achieved 100% accuracy in this case.
+- Support Vector Machine With Linear & Gaussian Kernels: A model capable of classification in higher dimensions
 
 ### Key Takeaways
 
