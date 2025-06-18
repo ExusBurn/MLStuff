@@ -31,10 +31,24 @@ We also experimented with Gaussian Naive Bayes, which models each feature using 
   - Covariance and correlation matrices
 - Evaluated model using accuracy and confusion matrix
 
-## 5. Results
-- Test Accuracy (ball models): 100%
-- Confusion matrix confirmed zero misclassifications
-- EDA showed that features are linearly separable for the chosen classes
+## 5. Results (Similar for all algorithms)
+
+- **Test Accuracy**: 100%
+- **Confusion Matrix**:
+
+|                         | Predicted: Setosa | Predicted: Versicolor |
+|-------------------------|-------------------|------------------------|
+| **Actual: Setosa**      | 10                | 0                      |
+| **Actual: Versicolor**  | 0                 | 10                     |
+
+- **Precision (Setosa)**: 1.0  
+- **Recall (Setosa)**: 1.0  
+- **Precision (Versicolor)**: 1.0  
+- **Recall (Versicolor)**: 1.0
+Zero misclassification confirmed on the confusion matrix
+Model perfectly classified both classes.
+
+
 
 ## 6. Conclusion
 In this project, we explored the classic Iris flower classification problem using three machine learning models:
