@@ -13,10 +13,22 @@ A basic supervised learning project using the famous Iris dataset to classify fl
 - NumPy
 - Scikit-learn
 - Matplotlib
+### 2. Animal Image Classification  
+A beginner-level image classification project using a custom **Feedforward Neural Network** to classify animals such as dogs, elephants, and butterflies from images.
 
-## 🚀 Future Goals
+Technologies Used:
 
-- 🔤 Natural Language Processing (NLP) Projects
-- 🖼️ Computer Vision (CV) Projects
-- 🧠 Neural Networks from scratch and using frameworks like TensorFlow or PyTorch
+- Python  
+- PyTorch  
+- torchvision  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- scikit-learn
+
+
+## Future Goals
+
+-  Natural Language Processing (NLP) Projects
+-  Unsupervised Learning Projects
 
